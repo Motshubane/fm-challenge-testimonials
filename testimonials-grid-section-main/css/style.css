@@ -1,0 +1,14 @@
+/*body defaults*/
+body {
+    font-size: 1.6rem;
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.container {
+    width: 85%;
+    margin-top: 30px;
+}
