@@ -14,20 +14,29 @@ body {
     flex-flow: column;
 }
 
-
 .container {
     width: 85%;
     margin-top: 30px;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 20.5px;
+    ;
 }
 
-h2,
+.cred-section {
+    line-height: 0.9;
+}
+
+h2 {
+    font-size: 13.5px;
+    font-weight: normal;
+}
+
 span,
 p {
-    font-size: 14px;
+    font-size: 13px;
+    width: 98%;
 }
 
 h3 {
@@ -55,6 +64,10 @@ h3 {
     padding: 20px;
 }
 
+.container .card-col {
+    box-shadow: 0px 1px 4px 0px #aaaaaab0;
+}
+
 .prof-img {
     display: flex;
     flex-flow: row;
@@ -71,6 +84,10 @@ h3 {
 
 .frst-card-col .prof-img img {
     border: 2px solid #a775f1;
+}
+
+.frth-card-col .prof-img img {
+    border: 2px solid #7541c8;
 }
 
 .frst-card-col .cred-section h2,
@@ -133,37 +150,64 @@ h3 {
 
 @media screen and (min-width: 1000px) {
     body {
-    width: auto;
-    height: 100vh;
+        width: auto;
     }
+
     .container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 15px;
+        gap: 25px;
     }
 
     .frst-card-col {
         grid-column: 1/3;
         grid-row: 1/2;
     }
+
     .sec-card-col {
         grid-column: 3/4;
         grid-row: 1/2;
     }
+
     .thrd-card-col {
         grid-column: 1/2;
         grid-row: 2/3;
     }
+
     .frth-card-col {
         grid-column: 2/4;
         grid-row: 2/3;
     }
-   .ffth-card-col {
+
+    .ffth-card-col {
         grid-column: 4/5;
         grid-row: 1/-1;
     }
+
     .container .card-col {
         margin: 0;
+    }
+
+    .quote-bg {
+        right: 15%;
+    }
+
+    .container .card-col {
+        padding: 35px;
+    }
+
+    /* scrollbar  just for fun*/
+    body::-webkit-scrollbar {
+        width: 1em;
+    }
+
+    body::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(28, 28, 28, 0.3);
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: #a775f1;
+        outline: 1px solid #a775f1;
     }
 }
