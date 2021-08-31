@@ -7,7 +7,6 @@ html,
 }
 
 body {
-    font-size: 1.6rem;
     background-color: hsl(210, 46%, 95%);
     display: flex;
     justify-content: center;
@@ -21,11 +20,12 @@ body {
     margin-top: 30px;
 }
 
-h2,
-span {
-    font-size: 16px;
+h3 {
+    font-size: 15px;
 }
-h3,
+
+h2,
+span,
 p {
     font-size: 14px;
 }
@@ -65,10 +65,105 @@ h3 {
 .prof-img img {
     margin-right: 15px;
     border-radius: 50%;
-    width: 3.2px;
-    height: 3.2px;
+    width: 35px;
+    height: 35px;
+}
+
+.frst-card-col .prof-img img {
+    border: 2px solid #a775f1;
+}
+
+.frst-card-col .cred-section h2,
+.frst-card-col .para-section h3,
+.sec-card-col .cred-section h2,
+.sec-card-col .para-section h3,
+.frth-card-col .cred-section h2,
+.frth-card-col .para-section h3 {
+    color: hsl(0, 0%, 100%);
+}
+
+.frst-card-col .cred-section span,
+.frst-card-col .para-section p,
+.sec-card-col .cred-section span,
+.sec-card-col .para-section p,
+.frth-card-col .cred-section span,
+.frth-card-col .para-section p {
+    color: hsl(0, 0%, 66%);
+    ;
+}
+
+.thrd-card-col .cred-section h2,
+.thrd-card-col .para-section h3,
+.ffth-card-col .cred-section h2,
+.ffth-card-col .para-section h3 {
+    color: hsl(217, 19%, 35%);
+}
+
+.thrd-card-col .cred-section span,
+.thrd-card-col .para-section p,
+.ffth-card-col .cred-section span,
+.ffth-card-col .para-section p {
+    color: hsl(0, 0%, 66%);
+}
+
+.sec-card-col {
+    background: hsl(217, 19%, 35%);
+}
+
+.thrd-card-col,
+.ffth-card-col {
+    background: hsl(0, 0%, 100%);
+}
+
+.frth-card-col {
+    background: hsl(219, 29%, 14%);
 }
 
 .para-section {
     position: relative;
+}
+
+.attribution {
+    margin: 20px;
+    text-align: center;
+    font-size: 10px;
+}
+
+/* Destop or larger screens*/
+
+@media screen and (min-width: 1000px) {
+    body {
+    width: auto;
+    height: 100vh;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .frst-card-col {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .sec-card-col {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .thrd-card-col {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .frth-card-col {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+   .ffth-card-col {
+        grid-column: 4/5;
+        grid-row: 1/-1;
+    }
+    .container .card-col {
+        margin: 0;
+    }
 }
