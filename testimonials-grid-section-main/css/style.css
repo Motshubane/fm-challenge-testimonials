@@ -1,4 +1,11 @@
-/*body defaults*/
+html,
+* {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-size: 1.6rem;
     background-color: hsl(210, 46%, 95%);
@@ -8,7 +15,60 @@ body {
     flex-flow: column;
 }
 
+
 .container {
     width: 85%;
     margin-top: 30px;
+}
+
+h2,
+span {
+    font-size: 16px;
+}
+h3,
+p {
+    font-size: 14px;
+}
+
+h3 {
+    margin: 15px 0;
+}
+
+.frst-card-col {
+    background: hsl(263, 55%, 52%);
+}
+
+
+.container .frst-card-col {
+    position: relative;
+}
+
+.quote-bg {
+    position: absolute;
+    top: 0;
+    right: 8%;
+}
+
+.container .card-col {
+    border-radius: 1.5%;
+    margin: 0 0 20px 0;
+    padding: 20px;
+}
+
+.prof-img {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+
+}
+
+.prof-img img {
+    margin-right: 15px;
+    border-radius: 50%;
+    width: 3.2px;
+    height: 3.2px;
+}
+
+.para-section {
+    position: relative;
 }
